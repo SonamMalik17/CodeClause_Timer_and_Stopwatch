@@ -96,9 +96,36 @@ h3{
     box-shadow:none;
 }
 /* to be understood */
+.hidden{
+    display:none;
+}
+
+.laps{
+    position:relative;
+    max-height:100px;
+    overflow-y:auto;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    gap:10px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.laps .lap{
+    width:50%;
+    display:flex;
+    justify-content:space-between ;
+    padding:10px;
+    background:rgba(255,255,255,0.15);
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.18);
+}
+.laps .lap.active p{
+    color:#fff;
+}
 
 
-/* @media (max-width: 600px){
+@media (max-width: 600px){
     .container{
         height:100vh;
         display:flex;
@@ -122,4 +149,4 @@ h3{
     .main .colon{
         font-size:16px;
     }
-} */
+}
